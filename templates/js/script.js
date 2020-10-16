@@ -1,6 +1,3 @@
-.active > a{
-    color: red;
-}
 .selector-for-some-widget {
     box-sizing: content-box;
   }
