@@ -10,16 +10,22 @@
     <header>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li {% if active_page == 'home' %} class="active" {% endif %}>
+                    <a href="/">Home</a>
+                </li>
+                <li {% if active_page == 'about' %} class="active" {% endif %}>
+                    <a href="/about">About</a>
+                </li>
+                <li {% if active_page == 'contact' %} class="active" {% endif %}>
+                    <a href="/contact">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
     <div class="container">
-       {% block saturs %}
-       
-       {% endblock %}
+        {% block saturs %}
+
+        {% endblock %}
     </div>
 </body>
 </html>
